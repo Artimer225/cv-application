@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import EditPerson from './components/Person.jsx'
 import DisplayPerson from './components/DisplayPerson.jsx'
+import './styles/cv-styles.css'
 function App() {
     const [person, setPerson] = useState({
     firstName: 'Joe',
@@ -22,12 +23,12 @@ function App() {
   return (
       <>
           <h1>CV Application</h1>
-          <div className={'cv-edit'}>
+          <div className={'cv-show'}>
               <EditPerson person={person} setPerson={setPerson} isActive={activeIndex === 0} onClick={() => setActiveIndex(1)}/>
           </div>
 
 
-          <div>
+          <div className={'cv-show'}>
               <DisplayPerson person={person} isActive={activeIndex === 1} onClick={() => setActiveIndex(0)}/>
           </div>
       </>

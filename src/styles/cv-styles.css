@@ -4,19 +4,10 @@
     justify-content: space-between;
 }
 
-.cv-edit {
+.cv-show {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-}
-
-
-.cv-show {
-    display: none;
-}
-
-.cv-show.display {
-    display: block;
 }
 
 .big-text {
