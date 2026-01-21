@@ -1,0 +1,25 @@
+.input-field, .display-field {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+.cv-edit {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+
+.cv-show {
+    display: none;
+}
+
+.cv-show.display {
+    display: block;
+}
+
+.big-text {
+    max-width: 300px;
+    text-align: justify;
+}
